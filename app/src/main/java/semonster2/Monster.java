@@ -1,3 +1,4 @@
+package semonster2;
 
 import java.util.Random;
 
