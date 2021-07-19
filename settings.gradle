@@ -8,3 +8,4 @@
  */
 
 rootProject.name = 'semonster2'
+include('app')
