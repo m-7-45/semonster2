@@ -9,12 +9,19 @@ import java.util.ArrayList;
  */
 public class Player {
   String name;
-  int hp;
+  int hp; // player HP
+  int carry_mom; // 持てるモンスター数
   ArrayList<Monster> deck = new ArrayList<>();
 
-  Player(String name, int hp) {
+  Player(String name, int hp, int carry) {
     this.name = name;
     this.hp = hp;
+    if (carry < 0)
+      this.carry_mom = 1;
+    else if (carry > 8)
+      this.carry_mom = 8;
+    else
+      this.carry_mom = carry;
   }
 
   public void drawMonsters() {
@@ -33,7 +40,7 @@ public class Player {
   public String toString() {
     StringBuilder info = new StringBuilder();
 
-    info.append("Deck:" + this.name + " HP:" + this.hp + "\n");
+    info.append("プレイヤー名:" + this.name + " HP:" + this.hp + " 持ち数:" + carry_mom + "\n");
     for (Monster m : this.deck) {
       info.append(m + "\n");
     }
