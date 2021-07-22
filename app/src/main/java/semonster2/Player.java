@@ -8,9 +8,9 @@ import java.util.ArrayList;
  * Deck：MonsterのArrayList
  */
 public class Player {
-  String name;
+  String name; // player name
   int hp; // player HP
-  int carry_mom; // 持てるモンスター数
+  int carry_mom; // 持ちモンスター数
   ArrayList<Monster> deck = new ArrayList<>();
 
   Player(String name, int hp, int carry) {
@@ -25,7 +25,7 @@ public class Player {
   }
 
   public void drawMonsters() {
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < this.carry_mom; i++) {
       this.deck.add(new Monster());
     }
 
@@ -41,6 +41,7 @@ public class Player {
     StringBuilder info = new StringBuilder();
 
     info.append("プレイヤー名:" + this.name + " HP:" + this.hp + " 持ち数:" + carry_mom + "\n");
+    info.append("持ちモンスター:\n");
     for (Monster m : this.deck) {
       info.append(m + "\n");
     }

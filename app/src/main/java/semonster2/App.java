@@ -12,6 +12,7 @@ public class App {
     System.out.println(new App().getGreeting());
     Monster monster = new Monster();
     Player player = new Player("test player", 100, 7);
+    player.drawMonsters();
 
     System.out.println(monster.toString());
     System.out.println(player.toString());
