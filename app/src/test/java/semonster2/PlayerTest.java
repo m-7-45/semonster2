@@ -6,7 +6,8 @@ import static org.junit.Assert.*;
 public class PlayerTest {
   @Test
   public void testAppHasAGreeting() {
-    Player PlayerTest = new Player("test player");
+    Player PlayerTest = new Player("test player", 100);
+    PlayerTest.drawMonsters();
     assertNotNull("app should have a greeting", PlayerTest.toString());
   }
 }

@@ -11,7 +11,7 @@ public class App {
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
     Monster monster = new Monster();
-    Player player = new Player("test player");
+    Player player = new Player("test player", 100);
 
     System.out.println(monster.toString());
     System.out.println(player.toString());
