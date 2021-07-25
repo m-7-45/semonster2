@@ -1,4 +1,4 @@
-package semonster2
+package semonster2;
 
 import org.junit.Test;
 
