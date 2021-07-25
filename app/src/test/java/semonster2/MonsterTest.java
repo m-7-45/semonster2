@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class MonsterTest {
   @Test
   public void testAppHasAGreeting() {
-    Monster classUnderTest = new Monster();
-    assertNotNull("app should have a greeting", new Monster().toString());
+    Monster MonsterTest = new Monster();
+    assertNotNull("app should have a greeting", MonsterTest.toString());
   }
 }
