@@ -10,4 +10,8 @@ public class PlayerTest {
     PlayerTest.drawMonsters();
     assertNotNull("app should have a greeting", PlayerTest.toString());
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
